@@ -11,7 +11,12 @@
     ];
 
   # Bootloader.
-  config.boot.loader.systemd-boot.enable = true;
+  # config.boot.loader.systemd-boot.enable = true;
+  config.boot.loader.grub = {
+    enable = true;
+    efiSupport = true;
+    device = "nodev";
+  };
   config.boot.loader.efi.canTouchEfiVariables = true;
 
   config.networking.hostName = "Adeptus_Mechanicus_Auspex"; # Define your hostname.
