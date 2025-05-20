@@ -6,8 +6,8 @@ let
 in {
   options.base = {
     enable = mkEnableOption "Baseline apps";
-    extraPackages = mkOptions {
-      type = types.listOf types.packages;
+    extraPackages = mkOption {
+      type = types.listOf types.package;
       default = [];
       description = "extra apps to include";
     };
