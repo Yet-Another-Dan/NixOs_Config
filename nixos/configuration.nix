@@ -36,8 +36,11 @@
   # desktop
   config.plasma6.enable = true;
 
-  #basic apps
+  # basic apps
   config.base.enable = true;
+
+  # gaming apps
+  config.gaming.enable = true;
 
   # locale and timezone setting
   config.locale.enable = true;

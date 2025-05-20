@@ -38,6 +38,7 @@
 		   ./modules/plasma6.nix 
 		   ./modules/nvidia.nix
 		   ./modules/base.nix
+		   ./modules/gaming.nix
 		   ./modules/locale.nix];
       };
     };

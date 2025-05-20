@@ -7,6 +7,7 @@ in {
   options.nvidia = {
     enable = mkEnableOption "NVIDIA laptop drivers";
   };
+
   config = mkIf cfg.enable {
     services.xserver.videoDrivers = ["nvidia"];
     hardware.nvidia = {
