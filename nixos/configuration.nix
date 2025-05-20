@@ -31,27 +31,9 @@
   # graphics drivers
   # config.hardware.graphics.enable = true;
   
-  config.services.xserver.videoDrivers = ["nvidia"];
-
-  config.hardware.nvidia = {
-    modesetting.enable = true;
-    powerManagement.enable = false;
-    powerManagement.finegrained = false;
-    open = false;
-    nvidiaSettings = true;
-  };
-
-  config.hardware.nvidia.prime = {
-    sync.enable = true;
-    amdgpuBusId = "PCI:5:0:0";
-    nvidiaBusId = "PCI:1:0:0";
-  };
+  config.nvidia.enable = true;
   
-  #desktop stuff
-  # config.services.xserver.enable = true;
-  # config.services.xserver.desktopManager.budgie.enable = true;
-  # config.services.xserver.displayManager.lightdm.enable = true;
-
+  # desktop
   config.plasma6.enable = true;
 
   # Enable networking

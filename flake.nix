@@ -35,7 +35,8 @@
         # > Our main nixos configuration file <
         modules = [home-manager.nixosModules.home-manager 
 		   ./nixos/configuration.nix
-		   ./modules/plasma6.nix];
+		   ./modules/plasma6.nix 
+		   ./modules/nvidia.nix];
       };
     };
   };
