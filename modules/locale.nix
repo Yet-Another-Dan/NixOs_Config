@@ -10,12 +10,12 @@ in {
 
   config = mkIf cfg.enable {
     # Set your time zone.
-    config.time.timeZone = "America/New_York";
+    time.timeZone = "America/New_York";
 
     # Select internationalisation properties.
-    config.i18n.defaultLocale = "en_US.UTF-8";
+    i18n.defaultLocale = "en_US.UTF-8";
 
-    config.i18n.extraLocaleSettings = {
+    i18n.extraLocaleSettings = {
       LC_ADDRESS = "en_US.UTF-8";
       LC_IDENTIFICATION = "en_US.UTF-8";
       LC_MEASUREMENT = "en_US.UTF-8";
@@ -28,7 +28,7 @@ in {
     };
 
     # Configure keymap in X11
-    config.services.xserver.xkb = {
+    services.xserver.xkb = {
       layout = "us";
       variant = "";
     };
