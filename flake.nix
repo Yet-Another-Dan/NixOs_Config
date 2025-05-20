@@ -37,7 +37,8 @@
 		   ./nixos/configuration.nix
 		   ./modules/plasma6.nix 
 		   ./modules/nvidia.nix
-		   ./modules/base.nix];
+		   ./modules/base.nix
+		   ./modules/locale.nix];
       };
     };
   };
