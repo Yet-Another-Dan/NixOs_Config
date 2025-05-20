@@ -13,7 +13,7 @@ in {
     };
   };
 
-  config = mkIf cfg.enable = {
+  config = mkIf cfg.enable {
     programs.firefox.enable = true;
     programs.fish.enable = true;
     services.flatpak.enable = true;
