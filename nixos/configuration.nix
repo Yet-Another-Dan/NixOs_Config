@@ -34,7 +34,8 @@
   config.nvidia.enable = true;
   
   # desktop
-  config.plasma6.enable = true;
+  config.plasma6.enable = false;
+  config.cosmic.enable = true;
 
   # basic apps
   config.base.enable = true;

@@ -39,6 +39,7 @@
 		   ./modules/nvidia.nix
 		   ./modules/base.nix
 		   ./modules/gaming.nix
+       ./modules/cosmic.nix
 		   ./modules/locale.nix];
       };
     };
