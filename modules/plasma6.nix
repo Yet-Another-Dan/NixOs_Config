@@ -22,7 +22,6 @@ in {
 
     programs.dconf.enable = true;
     environment.systemPackages = with pkgs; [
-	kitty
 	kdePackages.okular
 	kdePackages.plasma-browser-integration
     ] ++ cfg.extraPackages;
