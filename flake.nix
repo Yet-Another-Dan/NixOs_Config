@@ -34,7 +34,19 @@
         specialArgs = {inherit inputs outputs;};
         # > Our main nixos configuration file <
         modules = [home-manager.nixosModules.home-manager 
-		   ./nixos/configuration.nix
+		   ./hosts/laptop/configuration.nix
+		   ./modules/plasma6.nix 
+		   ./modules/nvidia.nix
+		   ./modules/base.nix
+		   ./modules/gaming.nix
+       ./modules/cosmic.nix
+		   ./modules/locale.nix];
+      };
+      Adeptus_Mechanicus_Terminal = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs;};
+
+        modules = [home-manager.nixosModules.home-manager 
+		   ./hosts/desktop/configuration.nix
 		   ./modules/plasma6.nix 
 		   ./modules/nvidia.nix
 		   ./modules/base.nix
