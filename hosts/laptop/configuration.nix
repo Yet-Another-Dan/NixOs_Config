@@ -40,6 +40,9 @@
   # basic apps
   config.base.enable = true;
 
+  # bluetooth
+  config.bluetooth.enable = true;
+
   # gaming apps
   config.gaming.enable = true;
 
