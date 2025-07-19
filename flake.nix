@@ -42,7 +42,7 @@
                    ./modules/cosmic.nix
 		   ./modules/locale.nix
                    ./modules/bluetooth.nix
-		   ./modules/3d_printing.nix];
+		   ./modules/printing.nix];
       };
       Adeptus_Mechanicus_Terminal = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
@@ -55,7 +55,7 @@
 		   ./modules/gaming.nix
                    ./modules/cosmic.nix
 		   ./modules/locale.nix
-		   ./modules/3d_printing.nix];
+		   ./modules/printing.nix];
       };
     };
   };
