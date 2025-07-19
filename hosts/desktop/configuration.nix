@@ -31,7 +31,7 @@
   # graphics drivers
   # config.hardware.graphics.enable = true;
   
-  config.nvidia.enable = true;
+  config.nvidia.enable = false;
   
   # desktop
   config.plasma6.enable = true;
