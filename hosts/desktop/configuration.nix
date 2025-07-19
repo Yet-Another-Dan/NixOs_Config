@@ -43,6 +43,9 @@
   # gaming apps
   config.gaming.enable = true;
 
+  # 3d printing apps
+  config.3d_printing.enable = true;
+
   # locale and timezone setting
   config.locale.enable = true;
 

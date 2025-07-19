@@ -15,6 +15,9 @@ in {
 
 
   config = mkIf cfg.enable {
+
+    
+    
     programs.steam = {
       enable = true;
       remotePlay.openFirewall = true;
@@ -25,6 +28,7 @@ in {
     environment.systemPackages = with pkgs; [
       lutris
       heroic
+      asdf-vm
     ] ++ cfg.extraPackages;
   };
 }
