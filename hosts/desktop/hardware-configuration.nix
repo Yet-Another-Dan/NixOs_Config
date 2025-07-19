@@ -13,6 +13,26 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
+  fileSystems."/seagate_2tb_hdd" = 
+    { device = "/dev/disk/by-label/seagate_2tb_hdd";
+      fsType = "ext4";
+    };
+
+  fileSystems."/samsung_1tb" = 
+    { device = "/dev/disk/by-label/samsung_1tb";
+      fsType = "ext4";
+    };
+
+  fileSystems."/crucial_1tb_1" = 
+    { device = "/dev/disk/by-label/crucial_1tb_1";
+      fsType = "ext4";
+    };
+
+  fileSystems."/crucial_1tb_2" = 
+    { device = "/dev/disk/by-label/crucial_1tb_2";
+      fsType = "ext4";
+    };
+
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/50763cf0-ca9d-41ea-9e35-49ec8b4a9a65";
       fsType = "ext4";
