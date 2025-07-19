@@ -2,9 +2,9 @@
 with lib;
 
 let
-  cfg = config.3d_printing;
+  cfg = config.printing;
 in {
-  options.3d_printing = {
+  options.printing = {
     enable = mkEnableOption "Enable 3d printing apps apps";
     extraPackages = mkOption {
       type = types.listOf types.package;
