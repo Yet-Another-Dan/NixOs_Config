@@ -48,6 +48,8 @@
     [ { device = "/dev/disk/by-uuid/fa4a77a8-a04b-4955-b941-b995346a5130"; }
     ];
 
+  boot.resumeDevice = "/dev/disk/by-uuid/fa4a77a8-a04b-4955-b941-b995346a5130";
+
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
   # still possible to use this option, but it's recommended to use it in conjunction

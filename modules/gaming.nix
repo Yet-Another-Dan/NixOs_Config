@@ -23,12 +23,14 @@ in {
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
       localNetworkGameTransfers.openFirewall = true;
+      protontricks.enable = true;
     };
 
     environment.systemPackages = with pkgs; [
       lutris
       heroic
       asdf-vm
+      protonup-qt
     ] ++ cfg.extraPackages;
   };
 }
