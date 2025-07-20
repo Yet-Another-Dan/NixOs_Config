@@ -31,6 +31,7 @@ in {
       heroic
       asdf-vm
       protonup-qt
+      freetype
     ] ++ cfg.extraPackages;
   };
 }
