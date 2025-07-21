@@ -25,6 +25,7 @@ in {
       gh # github
       fastfetch
       obsidian
+      spotify
     ] ++ cfg.extraPackages;
 
     services.mullvad-vpn.enable = true;
