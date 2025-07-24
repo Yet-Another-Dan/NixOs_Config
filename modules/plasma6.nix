@@ -20,6 +20,8 @@ in {
     services.displayManager.sddm.wayland.enable = true;
     services.desktopManager.plasma6.enable = true;
 
+    #services.displayManager.sddm.theme = "sddm-astronaut-theme";
+
     programs.dconf.enable = true;
     environment.systemPackages = with pkgs; [
 	kdePackages.okular
