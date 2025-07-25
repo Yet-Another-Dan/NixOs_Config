@@ -26,6 +26,7 @@ in {
       fastfetch
       obsidian
       spotify
+      tutanota-desktop
     ] ++ cfg.extraPackages;
 
     services.mullvad-vpn.enable = true;
