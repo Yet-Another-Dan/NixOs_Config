@@ -44,7 +44,10 @@ in {
         installPhase = ''
           mkdir -p $out/share/sddm/themes
           cp -R $src $out/share/sddm/themes/sddm-astronaut-theme
-          sed 's/astronaut.conf/${cfg.sddmTheme}.conf/' $out/share/sddm/themes/sddm-astronaut-theme/metadata.desktop
+        '';
+
+        postInstall = ''
+          substituteInPlace $out/share/sddm/themes/sddm-astronaut-theme/metadata.desktop \ --replace "ConfigFile=Themes/astronaut.conf" "ConfigFile=Themes/${cfg.sddmTheme}.conf"
         '';
       })
     ] ++ cfg.extraPackages;
