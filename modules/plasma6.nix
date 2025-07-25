@@ -6,6 +6,12 @@ let
 in {
   options.plasma6 = {
     enable = mkEnableOption "KDE Plasma 6 Desktop";
+
+    sddmTheme = mkOption {
+      type = types.str;
+      default = "astronaut";
+      description = "sddm theme";
+    };
     extraPackages = mkOption {
       type = types.listOf types.package;
       default = [];
@@ -38,6 +44,7 @@ in {
         installPhase = ''
           mkdir -p $out/share/sddm/themes
           cp -R $src $out/share/sddm/themes/sddm-astronaut-theme
+          sed 's/astronaut.conf/${cfg.sddmTheme}.conf/' $out/share/sddm/themes/sddm-astronaut-theme/metadata.desktop
         '';
       })
     ] ++ cfg.extraPackages;

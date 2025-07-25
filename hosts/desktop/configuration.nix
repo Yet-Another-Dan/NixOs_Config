@@ -35,6 +35,7 @@
   
   # desktop
   config.plasma6.enable = true;
+  config.plasma6.sddmTheme = "black_hole"; # no .conf
   config.cosmic.enable = false;
 
   # basic apps
