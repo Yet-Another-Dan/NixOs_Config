@@ -27,6 +27,7 @@ in {
       obsidian
       spotify
       tutanota-desktop
+      wl-clipboard
     ] ++ cfg.extraPackages;
 
     services.mullvad-vpn.enable = true;
